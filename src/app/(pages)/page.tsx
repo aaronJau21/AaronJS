@@ -1,5 +1,6 @@
 import { Empresas } from "@/components/home/Empresas";
 import { InformacionPrincipal } from "@/components/home/InformacionPrincipal";
+import { ReglasJuego } from "@/components/home/ReglasJuego";
 import { Transforma } from "@/components/home/Transforma";
 import { Metadata } from "next";
 
@@ -16,6 +17,7 @@ export default function Page() {
       <InformacionPrincipal />
       <Empresas />
       <Transforma />
+      <ReglasJuego />
     </>
   );
 }
