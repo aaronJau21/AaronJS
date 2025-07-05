@@ -16,13 +16,16 @@ export const InformacionPrincipal = () => {
       {/* Contenido encima del fondo */}
       <div className="bg-black/60 relative z-10 py-20">
         <div className="  container mx-auto w-11/12 md:w-6/12 text-white">
-          <h1 className="text-2xl text-center sm:text-4xl lg:text-6xl xl:text-7xl font-black">
+          <h1 className="text-2xl text-center sm:text-4xl lg:text-5xl xl:text-7xl font-bold">
             🚀 Impulsa tu presencia digital al siguiente nivel
           </h1>
-          <p className="text-xs sm:text-base mt-5 text-center sm:text-justify">
-            Haz que tu sitio web no solo funcione, sino que sorprenda. 📈 Mejora
-            la gestión de tu empresa con soluciones web y aplicaciones a medida,
-            diseñadas para brindar rendimiento, eficiencia y crecimiento real.
+          <p className="font-bold text-center text-lg md:text-2xl mt-3">
+            Haz despegar tu negocio con soluciones web a medida
+          </p>
+          <p className="text-base sm:text-2xl mt-3 text-center ">
+            Desde un sitio web impactante hasta aplicaciones eficientes, te
+            ayudamos a lograr un crecimiento extraordinario en el mundo
+            digital.
           </p>
           <div className="flex justify-center mt-5">
             <button className="text-xl cursor-pointer bg-[#00B4D8]/30 px-5 py-5 rounded-xl hover:bg-[#2EC4B6]/10 shadow-2xl">
