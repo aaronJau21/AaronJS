@@ -1,16 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --color-fondo: oklch(0.2599 0.0604 251.32);
-  --color-fondo-hover: oklch(0.3872 0.0604 251.32);
-  --color-texto: oklch(0.2101 0.0318 264.66);
-  --color-blanco: oklch(1 0 0);
-  --color-gris: oklch(0.8941 0.8824 0.9255);
-  --color-detalle: oklch(0.0863 0.1863 0.6941);
-  --color-unico: oklch(0.4902 0.6235 0.9333);
-}
-
-.btn {
-  @apply bg-fondo px-7 py-3 text-blanco rounded-xl text-xl;
-  @apply hover:bg-fondo-hover transition-colors duration-300 cursor-pointer;
+ --color-fondo: #F8F9FA;
+ --color-header: #0A2E59;
 }

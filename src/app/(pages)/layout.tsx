@@ -1,10 +1,10 @@
-import { Navbar } from "@/components/ui/header/Navbar";
+import { Header } from "@/components/ui/Header";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <section className="h-full">
-      <Navbar />
-      {children}
-    </section>
+    <>
+        <Header />
+        {children}
+    </>
   );
 }
