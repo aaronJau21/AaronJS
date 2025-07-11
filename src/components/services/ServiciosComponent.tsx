@@ -1,4 +1,68 @@
+"use client";
+
+import { motion } from "motion/react";
 import { CardComponent } from "../ui/cards/CardComponent";
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
+};
+
+const servicios = [
+  {
+    titulo: "Páginas Web",
+    descripcion:
+      "Diseñamos y desarrollamos sitios web modernos, rápidos y adaptables a cualquier dispositivo, usando tecnologías de última generación.",
+  },
+  {
+    titulo: "Desarrollo de Apps",
+    descripcion:
+      "Creamos aplicaciones móviles y de escritorio con interfaces intuitivas y alto rendimiento, totalmente adaptadas a tu negocio.",
+  },
+  {
+    titulo: "Sitios Web a Medida",
+    descripcion:
+      "Construimos soluciones web totalmente personalizadas, integradas con tus procesos y necesidades específicas.",
+  },
+  {
+    titulo: "Consultoría en Tecnología",
+    descripcion:
+      "Te ayudamos a tomar decisiones estratégicas con asesoría experta en software, infraestructura, automatización e IA.",
+  },
+  {
+    titulo: "Automatización",
+    descripcion:
+      "Optimizamos tus procesos con sistemas automatizados que ahorran tiempo, reducen errores y aumentan la eficiencia operativa.",
+  },
+  {
+    titulo: "Inteligencia Artificial",
+    descripcion:
+      "Implementamos soluciones de IA como chatbots, análisis predictivo y generación de contenido para potenciar tu negocio.",
+  },
+  {
+    titulo: "Base de Datos",
+    descripcion:
+      "Diseñamos, optimizamos y administramos bases de datos seguras y escalables para el manejo eficiente de tu información.",
+  },
+  {
+    titulo: "La Nube",
+    descripcion:
+      "Migramos y gestionamos tus servicios en la nube, garantizando escalabilidad, seguridad y disponibilidad 24/7.",
+  },
+];
+
+const ball = {
+  backgroundColor: "#dd00ee",
+  borderRadius: "50%",
+};
 
 export const ServiciosComponent = () => {
   return (
@@ -8,69 +72,26 @@ export const ServiciosComponent = () => {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-9 mt-8">
-        <CardComponent>
-          <h3 className="font-bold lg:text-3xl">Páginas Web</h3>
-          <p>
-            Diseñamos y desarrollamos sitios web modernos, rápidos y adaptables
-            a cualquier dispositivo, usando tecnologías de última generación.
-          </p>
-        </CardComponent>
-
-        <CardComponent>
-          <h3 className="font-bold lg:text-3xl">Desarrollo de Apps</h3>
-          <p>
-            Creamos aplicaciones móviles y de escritorio con interfaces
-            intuitivas y alto rendimiento, totalmente adaptadas a tu negocio.
-          </p>
-        </CardComponent>
-
-        <CardComponent>
-          <h3 className="font-bold lg:text-3xl">Sitios Web a Medida</h3>
-          <p>
-            Construimos soluciones web totalmente personalizadas, integradas con
-            tus procesos y necesidades específicas.
-          </p>
-        </CardComponent>
-
-        <CardComponent>
-          <h3 className="font-bold lg:text-3xl">Consultoría en Tecnología</h3>
-          <p>
-            Te ayudamos a tomar decisiones estratégicas con asesoría experta en
-            software, infraestructura, automatización e IA.
-          </p>
-        </CardComponent>
-
-        <CardComponent>
-          <h3 className="font-bold lg:text-3xl">Automatización</h3>
-          <p>
-            Optimizamos tus procesos con sistemas automatizados que ahorran
-            tiempo, reducen errores y aumentan la eficiencia operativa.
-          </p>
-        </CardComponent>
-
-        <CardComponent>
-          <h3 className="font-bold lg:text-3xl">Inteligencia Artificial</h3>
-          <p>
-            Implementamos soluciones de IA como chatbots, análisis predictivo y
-            generación de contenido para potenciar tu negocio.
-          </p>
-        </CardComponent>
-
-        <CardComponent>
-          <h3 className="font-bold lg:text-3xl">Base de Datos</h3>
-          <p>
-            Diseñamos, optimizamos y administramos bases de datos seguras y
-            escalables para el manejo eficiente de tu información.
-          </p>
-        </CardComponent>
-
-        <CardComponent>
-          <h3 className="font-bold lg:text-3xl">La Nube</h3>
-          <p>
-            Migramos y gestionamos tus servicios en la nube, garantizando
-            escalabilidad, seguridad y disponibilidad 24/7.
-          </p>
-        </CardComponent>
+        {servicios.map((servicio, index) => (
+          <motion.div
+            key={index}
+            custom={index}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.4,
+              scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            }}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            style={ball}
+          >
+            <CardComponent>
+              <h3 className="font-bold lg:text-3xl">{servicio.titulo}</h3>
+              <p>{servicio.descripcion}</p>
+            </CardComponent>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
