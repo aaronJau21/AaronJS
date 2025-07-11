@@ -4,30 +4,8 @@ import Image from "next/image";
 import Logo from "../../../public/img/shared/logo.png";
 import Link from "next/link";
 import { useState } from "react";
+import { rutas } from "./rutas";
 
-interface IRutas {
-  name: string;
-  href: string;
-}
-
-const rutas: IRutas[] = [
-  {
-    name: "Inicio",
-    href: "/",
-  },
-  {
-    name: "Servicios",
-    href: "/servicios",
-  },
-  {
-    name: "Nosotros",
-    href: "/nosotros",
-  },
-  {
-    name: "Historia",
-    href: "/historia",
-  },
-];
 
 export const Header = () => {
   const [showRoutes, setShowRoutes] = useState<boolean>(false);
