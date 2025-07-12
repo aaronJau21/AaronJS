@@ -16,8 +16,8 @@ export const rutas: IRutas[] = [
     name: "Nosotros",
     href: "/nosotros",
   },
-  {
-    name: "Historia",
-    href: "/historia",
-  },
+  // {
+  //   name: "Historia",
+  //   href: "/historia",
+  // },
 ];
