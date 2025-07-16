@@ -17,8 +17,8 @@ export const Header = () => {
           <Image
             src={Logo}
             alt="Logo de AaronJS"
-            width={70}
-            height={70}
+            width={150}
+            height={150}
             className="w-48"
             priority
           />

@@ -14,11 +14,12 @@ export const QuienesSomos = () => {
       viewport={{ once: true }}
       variants={fadeUp}
     >
-      <h2 className="text-2xl font-semibold mb-2">¿Quiénes somos?</h2>
+      <h2 className="text-2xl font-bold mb-2 text-header">¿Quiénes somos?</h2>
       <p className="text-gray-600">
-        Somos un equipo multidisciplinario enfocado en transformar ideas en
-        soluciones tecnológicas reales, combinando diseño, código e inteligencia
-        artificial.
+        Somos un equipo multidisciplinario apasionado por la innovación.
+        Transformamos ideas en soluciones tecnológicas efectivas, combinando
+        diseño estratégico, desarrollo de software de alto nivel e inteligencia
+        artificial para crear productos que generan impacto real.
       </p>
     </motion.section>
   );

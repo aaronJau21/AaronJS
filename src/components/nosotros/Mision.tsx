@@ -15,11 +15,11 @@ export const Mision = () => {
       viewport={{ once: true }}
       variants={fadeUp}
     >
-      <h2 className="text-2xl font-semibold mb-2">Nuestra misión</h2>
+      <h2 className="text-2xl font-bold mb-2 text-header">Nuestra misión</h2>
       <p className="text-gray-600">
-        Empoderar a empresas de todos los tamaños mediante soluciones
-        tecnológicas personalizadas, centradas en la innovación, escalabilidad y
-        el impacto real.
+        Impulsar el crecimiento de empresas de todos los tamaños a través de
+        soluciones tecnológicas personalizadas, innovadoras y escalables, que
+        generen un impacto tangible y sostenible en sus procesos y resultados.
       </p>
     </motion.section>
   );

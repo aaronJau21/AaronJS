@@ -27,7 +27,7 @@ export const Valores = () => {
         ].map((valor, i) => (
           <motion.div
             key={i}
-            className="bg-gray-100 p-6 rounded-xl shadow-sm"
+            className="bg-header p-6 rounded-xl shadow-sm text-white"
             whileHover={{ scale: 1.05 }}
           >
             <span className="font-bold">{valor}</span>
