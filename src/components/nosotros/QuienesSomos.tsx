@@ -16,10 +16,12 @@ export const QuienesSomos = () => {
     >
       <h2 className="text-2xl font-bold mb-2 text-header">¿Quiénes somos?</h2>
       <p className="text-gray-600">
-        Somos un equipo multidisciplinario apasionado por la innovación.
-        Transformamos ideas en soluciones tecnológicas efectivas, combinando
-        diseño estratégico, desarrollo de software de alto nivel e inteligencia
-        artificial para crear productos que generan impacto real.
+        Somos un equipo que entiende los retos de emprender. Sabemos lo que
+        significa comenzar con pocos recursos y muchas ideas, porque también
+        empezamos así. Por eso, nuestra misión es simple: ayudar a micro y
+        pequeñas empresas a crecer con tecnología que realmente funcione para
+        ellas. Sin complicaciones ni tecnicismos, solo soluciones que hagan tu
+        negocio más profesional, visible y rentable.
       </p>
     </motion.section>
   );

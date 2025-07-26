@@ -21,12 +21,9 @@ export const Equipo = () => {
       <h2 className="text-2xl font-semibold mb-6 text-center">
         Nuestro equipo
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div className="">
         {[
           { nombre: "Aaron Jauregui Sifuentes", rol: "Programador FULL STACK", img: AaronImage },
-          { nombre: "Luis Díaz", rol: "CTO", img: AaronImage },
-          { nombre: "Paula Ríos", rol: "Diseñadora UX/UI", img: AaronImage },
-          { nombre: "Carlos Pérez", rol: "Desarrollador IA", img: AaronImage },
         ].map((persona, i) => (
           <motion.div
             key={i}
