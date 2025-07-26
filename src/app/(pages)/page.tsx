@@ -1,6 +1,5 @@
 import { Empresas } from "@/components/home/Empresas";
 import { InformacionPrincipal } from "@/components/home/InformacionPrincipal";
-import { ReglasJuego } from "@/components/home/ReglasJuego";
 import { Transforma } from "@/components/home/Transforma";
 import { Metadata } from "next";
 
@@ -21,16 +20,16 @@ export const metadata: Metadata = {
     title: "AaronJS - Soluciones digitales a medida",
     description:
       "Agencia de software especializada en desarrollo web y apps para empresas modernas. Elevamos tu presencia digital.",
-    url: "https://aaronjs.com",
+    url: "https://aaronjs-production.up.railway.app/",
     siteName: "AaronJS",
-    images: [
-      {
-        url: "https://aaronjs.com/og-home.jpg", // <-- Reemplázalo con tu imagen real
-        width: 1200,
-        height: 630,
-        alt: "AaronJS - Desarrollo Web Personalizado",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "https://aaronjs.com/og-home.jpg", // <-- Reemplázalo con tu imagen real
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "AaronJS - Desarrollo Web Personalizado",
+    //   },
+    // ],
     type: "website",
   },
 };
@@ -41,7 +40,6 @@ export default function Page() {
       <InformacionPrincipal />
       <Empresas />
       <Transforma />
-      <ReglasJuego />
     </>
   );
 }

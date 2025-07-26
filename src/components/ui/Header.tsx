@@ -20,7 +20,7 @@ export const Header = () => {
             width={150}
             height={150}
             className="w-48"
-            priority
+            // priority
           />
         </Link>
 

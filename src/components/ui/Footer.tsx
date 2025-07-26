@@ -15,7 +15,7 @@ export const Footer = () => {
               width={70}
               height={70}
               className="w-48"
-              priority
+              // priority
             />
           </Link>
         </div>
