@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import CasaBlanca from "@/assets/Empresas/casaBlanca.webp";
-import MascoPlus from "@/assets/Empresas/mascoPLus.png";
 
 export const Empresas = () => {
   return (
