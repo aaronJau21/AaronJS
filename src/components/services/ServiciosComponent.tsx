@@ -5,45 +5,21 @@ import { CardComponent } from "../ui/cards/CardComponent";
 
 const servicios = [
   {
-    titulo: "Páginas Web",
+    titulo: "Páginas Web que vende",
     descripcion:
-      "Diseñamos y desarrollamos sitios web modernos, rápidos y adaptables a cualquier dispositivo, usando tecnologías de última generación.",
+      "Sitios modernos y optimizados para SEO, diseñados para atraer y convertir visitantes en clientes.",
   },
   {
-    titulo: "Desarrollo de Apps",
+    titulo: "Apps de gestión para crecer",
     descripcion:
-      "Creamos aplicaciones móviles y de escritorio con interfaces intuitivas y alto rendimiento, totalmente adaptadas a tu negocio.",
+      "Sistemas practicos para administrar clientes, pedidos o inventario de forma organizada y profesional.",
   },
   {
-    titulo: "Sitios Web a Medida",
+    titulo: "Automatización Inteligente",
     descripcion:
-      "Construimos soluciones web totalmente personalizadas, integradas con tus procesos y necesidades específicas.",
+      "Chatbots y flujos automaticos que ahorran tiempo y mejoran la eficiencia.",
   },
-  {
-    titulo: "Consultoría en Tecnología",
-    descripcion:
-      "Te ayudamos a tomar decisiones estratégicas con asesoría experta en software, infraestructura, automatización e IA.",
-  },
-  {
-    titulo: "Automatización",
-    descripcion:
-      "Optimizamos tus procesos con sistemas automatizados que ahorran tiempo, reducen errores y aumentan la eficiencia operativa.",
-  },
-  {
-    titulo: "Inteligencia Artificial",
-    descripcion:
-      "Implementamos soluciones de IA como chatbots, análisis predictivo y generación de contenido para potenciar tu negocio.",
-  },
-  {
-    titulo: "Base de Datos",
-    descripcion:
-      "Diseñamos, optimizamos y administramos bases de datos seguras y escalables para el manejo eficiente de tu información.",
-  },
-  {
-    titulo: "La Nube",
-    descripcion:
-      "Migramos y gestionamos tus servicios en la nube, garantizando escalabilidad, seguridad y disponibilidad 24/7.",
-  },
+
 ];
 
 const ball = {
